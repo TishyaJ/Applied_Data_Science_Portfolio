@@ -1,55 +1,70 @@
-# Market_Data_Analysis  
-📊 Facebook Live Sellers & Advertising Sales Prediction - Data Analysis Project
+# 📊 Applied Data Science Portfolio
 
-This project contains detailed exploratory data analysis (EDA), visualization, and predictive modeling for two real-world datasets:
+This repository showcases a collection of three data analysis projects developed in **Python** using **Google Colab**. Each project explores a unique dataset, addresses specific business questions, and demonstrates end-to-end application of data science techniques — from **Exploratory Data Analysis (EDA)** to **Predictive Modeling**.
 
-1. **Facebook Live Sellers in Thailand**  
-2. **Advertising Expenditure vs Product Sales**
+---
 
-These datasets were analyzed as part of a case project, with each dataset addressed separately in its own Jupyter Notebook. The project aims to uncover insights from social media engagement patterns and understand how advertising spend affects product sales.
+## 1. Facebook Engagement Analysis 📈
 
----------------------------
-📌 Dataset 1: Facebook Live Sellers in Thailand
+**🎯 Objective:**  
+Analyze Facebook post data to discover what factors drive higher user engagement.
 
-**Objective:**  
-Analyze how post timing, type, and engagement metrics like reactions, shares, and comments interact. Identify posting strategies that maximize engagement and cluster posts by behavior.
+**🛠️ Techniques Used:**
+- Time-series analysis of post upload hour vs. engagement
+- Correlation analysis between reactions, comments, and shares
+- K-Means clustering for segmentation of posts
 
-**Highlights:**
-- Cleaned and processed timestamp and engagement fields.
-- Analyzed average reactions by hour of day.
-- Explored correlations between reactions, shares, and comments.
-- Compared engagement by post type (status, video, photo, link).
-- Applied K-Means clustering (using PCA) to group posts by engagement patterns.
+**📌 Key Findings:**
+- Engagement peaks during **early afternoon hours**
+- **Videos** receive the highest number of **comments and shares**
+- Posts cluster into distinct categories like:
+  - *Low engagement*
+  - *High reaction*
+  - *Viral share* posts
 
-**Visualizations:**
-- Line plots for hourly engagement trends
-- Heatmaps for correlation matrices
-- Cluster analysis using PCA-reduced components
+---
 
---------------------------
+## 2. Advertising Sales Prediction 📺
 
-📌 Dataset 2: Advertising Spend vs Sales
+**🎯 Objective:**  
+Predict product sales based on advertising spend across TV, radio, and newspaper, and determine which channel contributes most to sales.
 
-**Objective:**  
-Build a regression model to predict product sales based on advertising spend across TV, Radio, and Newspapers.
+**🛠️ Techniques Used:**
+- Correlation analysis between ad channels and sales
+- **Linear Regression** model to predict sales
+- Model evaluation and prediction on new data
 
-**Key Analysis:**
-- Performed EDA on 150 entries of ad spend and sales data.
-- Calculated Pearson correlation between each ad channel and sales.
-- Trained and evaluated a multiple linear regression model.
-- Identified the most impactful advertising channels.
+**📌 Key Findings:**
+- **TV advertising** has the strongest positive correlation with sales
+- The regression model performs well in forecasting sales
+- Excluding TV ad spend leads to a **significant drop** in model accuracy
 
-**Findings:**
-- TV and Radio show strong positive correlation with sales.
-- Newspaper has low predictive power.
-- Model achieved high R² score using only TV and Radio features.
+---
 
+## 3. Red Wine Quality Prediction 🍷
 
+**🎯 Objective:**  
+Use physicochemical properties of red wine to predict its quality rating.
 
-## 🚀 Getting Started
+**🛠️ Techniques Used:**
+- Exploratory Data Analysis (EDA) on chemical features (e.g., alcohol, acidity)
+- Trained two classifiers: **Decision Tree** and **Random Forest**
+- Compared model performance
 
-### Prerequisites
-If running locally, install required libraries:
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
+**📌 Key Findings:**
+- **Alcohol content** is the strongest positive predictor of quality
+- **Volatile acidity** negatively impacts wine quality
+- **Random Forest** significantly outperforms the Decision Tree model in prediction accuracy
+
+---
+
+## 🔧 Tools & Technologies
+
+- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
+- Google Colab
+- Machine Learning (Regression, Clustering, Classification)
+- Data Visualization & Statistical Analysis
+
+---
+
 
